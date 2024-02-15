@@ -14,6 +14,7 @@ function App() {
 
    var response = await Axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${KEY}`)
     console.log(response.data)
+    console.log("hello world");
     setData(response.data)
   }
 
